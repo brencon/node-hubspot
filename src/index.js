@@ -41,6 +41,7 @@ module.exports.getAllTickets = function(apiKey) {
     const resJSON = JSON.parse(res);
     _.forEach(resJSON.objects, function(obj) {
       const hsTicket = {};
+      hsTicket.ticketId = obj.objectId;
       hsTicket.subject = obj.properties.subject.value;
       hsTicket.contactId = obj.properties.created_by.value;
       hsTicket.body = obj.properties.content.value;
