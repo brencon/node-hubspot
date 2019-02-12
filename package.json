@@ -1,0 +1,44 @@
+{
+  "name": "node-hubspot",
+  "version": "0.0.1",
+  "description": "An npm module for interacting with the HubSpot API",
+  "main": "index.js",
+  "scripts": {
+    "cover": "nyc --reporter=html --reporter=text mocha test/**/*.spec.js",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "lint": "./node_modules/.bin/eslint src --fix",
+    "test": "SET \"NODE_ENV=production\" && mocha --reporter spec test/**/*.spec.js",
+    "preversion": "npm run lint && npm test && npm run cover",
+    "prepublishOnly": "npm version patch && git push --tags && git push"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brencon/node-hubspot.git"
+  },
+  "keywords": [
+    "npm",
+    "module",
+    "hubspot",
+    "nodejs",
+    "library"
+  ],
+  "author": "Brendan Conrad <brconrad@symitar.com> (https://twitter.com/symBrendan)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/brencon/npm-mod-start/issues"
+  },
+  "homepage": "https://github.com/brencon/npm-mod-start#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.2",
+    "eslint": "^5.10.0",
+    "mocha": "^5.2.0",
+    "nyc": "^13.1.0"
+  },
+  "dependencies": {
+    "config": "^3.0.1",
+    "lodash": "^4.17.11",
+    "request": "^2.88.0",
+    "request-promise": "^4.2.2"
+  }
+}
