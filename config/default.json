@@ -1,0 +1,7 @@
+{
+  "rejectUnauthorized": false,
+  "hubspot": {
+    "apikey": "b6612e05-307a-4dce-8079-c33840726ae8",
+    "baseURI": "https://api.hubapi.com/"
+  }
+}
