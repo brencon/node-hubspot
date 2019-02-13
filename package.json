@@ -36,7 +36,6 @@
     "nyc": "^13.1.0"
   },
   "dependencies": {
-    "config": "^3.0.1",
     "lodash": "^4.17.11",
     "request": "^2.88.0",
     "request-promise": "^4.2.2"

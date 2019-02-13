@@ -1,6 +1,0 @@
-{
-  "rejectUnauthorized": false,
-  "hubspot": {
-    "baseURI": "https://api.hubapi.com/"
-  }
-}
