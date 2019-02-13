@@ -1,6 +1,6 @@
 {
   "name": "node-hubspot-mod",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "An npm module for interacting with the HubSpot API",
   "main": "index.js",
   "scripts": {
