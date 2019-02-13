@@ -79,7 +79,7 @@ module.exports.getAllTickets = function(apiKey) {
         hsTicket.contactId = obj.properties.created_by.value;
         hsTicket.body = obj.properties.content.value;
         const matchedContact = _.find(hsContacts, function(contact) {
-          return contact.contactId = hsTicket.contactId;
+          return contact.contactId.toString() === hsTicket.contactId.toString();
         });
         hsTicket.firstName = matchedContact.firstName;
         hsTicket.lastName = matchedContact.lastName;
